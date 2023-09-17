@@ -6,10 +6,9 @@ import { galleryItems } from './gallery-items';
 const fotoGallery = document.querySelector(".gallery");
 const getFotoGallery = galleryItems
 	.map(
-		({preview, original, description}) => `<li class="gallery__item"><a class="gallery__item" href="${original}">
+		({preview, original, description}) => `<a class="gallery__item" href="${original}">
     <img class="gallery__image" src="${preview}" alt="${description}" />
-</a>
-	</li>`
+</a>`
 	)
 	.join(" ");
 
